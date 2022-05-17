@@ -4,4 +4,6 @@ set -x VSCODE_GALLERY_ITEM_URL 'https://marketplace.visualstudio.com/items'
 set -x VSCODE_GALLERY_CONTROL_URL ''
 set -x VSCODE_GALLERY_RECOMMENDATIONS_URL ''
 
+
+
 set -x CHROME_EXECUTABLE '/usr/bin/google-chrome-unstable'
