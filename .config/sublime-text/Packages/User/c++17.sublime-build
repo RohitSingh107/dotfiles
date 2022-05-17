@@ -1,0 +1,6 @@
+{
+"cmd" : ["g++ -std=c++17 $file_name -o $file_base_name && timeout 4s ./$file_base_name</home/rohits/mydata/code/C_and_C++/sublime_editor/inputf.in>/home/rohits/mydata/code/C_and_C++/sublime_editor/outputf.in"], 
+"selector" : "source.c",
+"shell": true,
+"working_dir" : "$file_path"
+}

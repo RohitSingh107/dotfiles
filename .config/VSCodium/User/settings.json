@@ -1,0 +1,24 @@
+{
+    "workbench.colorTheme": "Sweet Dracula",
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true,
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    },
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "pretty-formatter.braces": true,
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "window.zoomLevel": 1,
+    "cmake.configureOnOpen": true
+}

@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "coc-clangd": ">=0.21.3",
+    "coc-flutter": ">=1.9.7",
+    "coc-json": ">=1.4.1",
+    "coc-python": ">=1.2.13",
+    "coc-snippets": ">=3.0.8",
+    "coc-vimlsp": ">=0.12.8"
+  }
+}
