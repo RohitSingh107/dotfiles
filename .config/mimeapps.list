@@ -51,5 +51,5 @@ image/x-tga=feh.desktop;
 image/x-xbitmap=feh.desktop;
 text/x-haskell=org.gnome.meld.desktop;
 x-directory/normal=pcmanfm.desktop;filelight.desktop;
-inode/directory=pcmanfm.desktop;filelight.desktop;
+inode/directory=org.gnome.meld.desktop;pcmanfm.desktop;filelight.desktop;
 x-scheme-handler/mailto=thunderbird-nightly.desktop;
