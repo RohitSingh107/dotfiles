@@ -168,6 +168,9 @@ alias vim="nvim";
 alias nv="nvim";
 alias newcode='git status && git add . && git commit -m "new code" && git push origin'
 
+## nvim inputf.in -c "vsplit tmp.cpp" -c "wincmd l" -c "split outputf.in"
+## nvim "inputf.in" -c "split outputf.in" -c "topleft vs tmp.cpp"
+
 ## Run neofetch if session is interactive
 # if status --is-interactive && type -q neofetch
    # neofetch

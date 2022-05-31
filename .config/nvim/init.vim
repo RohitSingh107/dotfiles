@@ -12,7 +12,6 @@
 :set ignorecase
 :set hlsearch
 :set cursorline
-
 call plug#begin()
 
 Plug 'https://github.com/preservim/nerdtree'
@@ -34,6 +33,7 @@ Plug 'Mofiqul/dracula.nvim'
 Plug 'honza/vim-snippets' " Snippers
 Plug 'thinca/vim-quickrun'
 Plug 'luochen1990/rainbow' " For Colored parenthesis
+Plug 'TovarishFin/vim-solidity'
 call plug#end()
 
 
