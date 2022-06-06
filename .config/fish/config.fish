@@ -175,3 +175,21 @@ alias newcode='git status && git add . && git commit -m "new code" && git push o
 # if status --is-interactive && type -q neofetch
    # neofetch
 # end
+
+function tse 
+	 nvim "~/mydata/code/C_and_C++/competitive_programming/outputf.in" -c "split ~/mydata/code/C_and_C++/competitive_programming/inputf.in" -c "topleft vs $argv"
+end
+
+function gcr
+    g++ -Wall $argv -o tmp && ./tmp
+end
+
+function notify
+    set -l job (jobs -l -g)
+    or begin; echo "There are no jobs" >&2; return 1; end
+
+    function _notify_job_$job --on-job-exit $job --inherit-variable job
+        echo -n \a # beep
+        functions -e _notify_job_$job
+    end
+end
