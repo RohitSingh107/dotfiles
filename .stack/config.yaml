@@ -1,0 +1,4 @@
+templates:
+  params: null
+system-ghc: true
+install-ghc: false
