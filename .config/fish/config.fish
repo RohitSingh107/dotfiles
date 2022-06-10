@@ -181,7 +181,7 @@ function tse
 end
 
 function gcr
-    g++ -Wall $argv -o tmp && ./tmp
+    g++ -Wall -Wextra $argv -o tmp && ./tmp
 end
 
 function notify
