@@ -24,6 +24,7 @@ Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
 Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
 Plug 'https://github.com/neoclide/coc.nvim'  " Auto Completion
 Plug 'dart-lang/dart-vim-plugin'
+Plug 'thosakwe/vim-flutter'
 Plug 'natebosch/vim-lsc'
 Plug 'natebosch/vim-lsc-dart'
 Plug 'jiangmiao/auto-pairs'
@@ -48,6 +49,6 @@ nnoremap <silent> ]<space>  :<c-u>put =repeat([''],v:count)<bar>'[-1<cr>
 let dart_html_in_string=v:true
 let g:dart_style_guide = 2
 let g:dart_format_on_save = 1
-let g:lsc_auto_map = v:true
+let g:lsc_auto_map = v:true " For Dart Server
 let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
 source ~/.config/nvim/coc.vim
