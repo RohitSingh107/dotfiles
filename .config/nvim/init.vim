@@ -35,6 +35,7 @@ Plug 'honza/vim-snippets' " Snippers
 Plug 'thinca/vim-quickrun'
 Plug 'luochen1990/rainbow' " For Colored parenthesis
 Plug 'TovarishFin/vim-solidity'
+Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
 call plug#end()
 
 
@@ -52,3 +53,5 @@ let g:dart_format_on_save = 1
 let g:lsc_auto_map = v:true " For Dart Server
 let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
 source ~/.config/nvim/coc.vim
+
+
