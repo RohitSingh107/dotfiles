@@ -19,5 +19,11 @@
     "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
     "editor.formatOnSave": true,
     "editor.minimap.enabled": false,
-    "cmake.configureOnOpen": true
+    "cmake.configureOnOpen": true,
+
+    "[solidity]": {
+        "editor.defaultFormatter": "NomicFoundation.hardhat-solidity"
+    },
+
+    "window.zoomLevel": 1
 }
