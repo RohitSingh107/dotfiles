@@ -25,5 +25,6 @@
         "editor.defaultFormatter": "NomicFoundation.hardhat-solidity"
     },
 
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "hardhat.telemetry": true
 }
