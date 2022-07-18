@@ -8,7 +8,9 @@
     "javascriptreact",
     "typescript",
     "typescriptreact",
-    "json"
+    "json",
+    "html",
+    "solidity"
   ],
 
   "languageserver": {

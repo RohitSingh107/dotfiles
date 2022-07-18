@@ -3,14 +3,16 @@ snippet basiccpp
 #pragma GCC target("sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,fma")
 #pragma GCC optimize("unroll-loops")
 #include <bits/stdc++.h>  
- 
+
 using namespace std;
- 
+
 int32_t main(){
-    
+	clock_t _t = clock();
+
 	${0:${VISUAL}}
 
-    return 0;
+	cerr << "Run Time: " << (double)(clock() - _t) / CLOCKS_PER_SEC << " seconds";
+	return 0;
 }
 
 endsnippet
@@ -44,9 +46,9 @@ snippet compet
 #include <iomanip>
 #include <fstream>
 #include <initializer_list>
- 
+
 using namespace std;
- 
+
 typedef long long ll;
 typedef long double ld;
 typedef pair<int,int> p32;
@@ -85,13 +87,13 @@ int cnt = 1;
 
 template<class T>
 void toConsole(T content){
-    cout<<"Log No. "<< cnt <<" | "<<content<<endl;
+	cout<<"Log No. "<< cnt <<" | "<<content<<endl;
 	cnt++;
 }
 
 template<class T>
 void toConsole(vector<T> v){
-    cout<<"Log No. "<< cnt<<" | <vector> ";
+	cout<<"Log No. "<< cnt<<" | <vector> ";
 	for(auto e : v){
 		std::cout << e << " ";
 	}
@@ -101,7 +103,7 @@ void toConsole(vector<T> v){
 
 template<class T>
 void toConsole(set<T> s){
-    cout<<"Log No. "<< cnt<<" | <set> ";
+	cout<<"Log No. "<< cnt<<" | <set> ";
 	for(auto e : s){
 		std::cout << e << " ";
 	}
@@ -111,7 +113,7 @@ void toConsole(set<T> s){
 
 template<class T>
 void toConsole(unordered_set<T> us){
-    cout<<"Log No. "<< cnt<<" | <unordered_set>";
+	cout<<"Log No. "<< cnt<<" | <unordered_set>";
 	for(auto e : us){
 		std::cout << e << " ";
 	}
@@ -121,7 +123,7 @@ void toConsole(unordered_set<T> us){
 
 template<class KEY, class VAL>
 void toConsole(map<KEY, VAL> m){
-    cout<<"Log No. "<< cnt<<" | <map>" << endl;
+	cout<<"Log No. "<< cnt<<" | <map>" << endl;
 	for(auto p : m){
 		std::cout << "\t\t" << p.first << " " << p.second << std::endl;
 	}
@@ -131,7 +133,7 @@ void toConsole(map<KEY, VAL> m){
 
 template<class KEY, class VAL>
 void toConsole(unordered_map<KEY, VAL> m){
-    cout<<"Log No. "<< cnt<<" | <unordered_map>" << endl;
+	cout<<"Log No. "<< cnt<<" | <unordered_map>" << endl;
 	for(auto p : m){
 		std::cout << "\t\t" << p.first << " " << p.second << std::endl;
 	}
@@ -141,7 +143,7 @@ void toConsole(unordered_map<KEY, VAL> m){
 
 template<class T>
 void toConsole(std::initializer_list<T> list){
-    cout<<"Log No. "<< cnt<<" | ";
+	cout<<"Log No. "<< cnt<<" | ";
 	for(auto e : list){
 		std::cout << e << " ";
 	}
@@ -155,19 +157,22 @@ void solve(){
 }
 
 int32_t main() {
- 
-    #ifndef ONLINE_JUDGE
-    freopen("/home/rohits/mydata/code/C_and_C++/competitive_programming/inputf.in", "r", stdin);
-    freopen("/home/rohits/mydata/code/C_and_C++/competitive_programming/outputf.in", "w", stdout);
-    #endif
- 
-    fast_cin();
-    ll t;
-    cin >> t;
-    while(t--) {
-        solve();
-    }
-    return 0;
+	clock_t _t = clock();
+
+	#ifndef ONLINE_JUDGE
+	freopen("/home/rohits/mydata/code/C_and_C++/competitive_programming/inputf.in", "r", stdin);
+	freopen("/home/rohits/mydata/code/C_and_C++/competitive_programming/outputf.in", "w", stdout);
+	#endif
+
+	fast_cin();
+	ll t;
+	cin >> t;
+	while(t--) {
+		solve();
+	}
+
+	cerr << "Run Time: " << (double)(clock() - _t) / CLOCKS_PER_SEC << " seconds";
+	return 0;
 }
 
 endsnippet

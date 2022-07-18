@@ -1,5 +1,5 @@
 :set number
-" :set relativenumber
+:set relativenumber
 :set autoindent
 :set tabstop=4
 :set shiftwidth=4
@@ -37,6 +37,9 @@ Plug 'luochen1990/rainbow' " For Colored parenthesis
 Plug 'TovarishFin/vim-solidity'
 Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
 Plug 'akinsho/toggleterm.nvim'
+Plug 'https://github.com/ctrlpvim/ctrlp.vim' " Fuzzy Find 
+" Plug 'tpope/vim-unimpaired' " Moving Code Blocks 
+Plug 'http://github.com/jeetsukumaran/vim-buffergator' "Vim Buffers
 call plug#end()
 
 
