@@ -23,6 +23,14 @@ snippet co
 std::cout << ${1} << std::endl;
 endsnippet
 
+
+snippet stdFile
+#ifndef ONLINE_JUDGE
+freopen("/home/rohits/mydata/code/C_and_C++/competitive_programming/inputf.in", "r", stdin);
+freopen("/home/rohits/mydata/code/C_and_C++/competitive_programming/outputf.in", "w", stdout);
+#endif
+endsnippet
+
 snippet compet
 #pragma GCC optimize("Ofast")
 #pragma GCC target("sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,fma")

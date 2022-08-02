@@ -1,10 +1,11 @@
 :set number
 :set relativenumber
 :set autoindent
-:set tabstop=4
-:set shiftwidth=4
+:set tabstop=2
+:set shiftwidth=2
+:set softtabstop=2
+:set expandtab
 :set smarttab
-:set softtabstop=4
 :set mouse=a
 :set clipboard=unnamedplus
 :set cmdheight=1
@@ -12,6 +13,7 @@
 :set ignorecase
 :set hlsearch
 :set cursorline
+:retab
 call plug#begin()
 
 Plug 'https://github.com/preservim/nerdtree'

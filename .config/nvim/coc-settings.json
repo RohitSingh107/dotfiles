@@ -10,7 +10,10 @@
     "typescriptreact",
     "json",
     "html",
-    "solidity"
+    "solidity",
+    "haskell",
+    "cpp",
+    "c++"
   ],
 
   "languageserver": {

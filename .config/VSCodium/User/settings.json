@@ -26,5 +26,6 @@
     },
 
     "window.zoomLevel": 1,
-    "hardhat.telemetry": true
+    "hardhat.telemetry": true,
+    "haskell.manageHLS": "GHCup"
 }
