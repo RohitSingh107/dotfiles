@@ -1,6 +1,6 @@
 {
   "snippets.userSnippetsDirectory": "~/.config/nvim/snippets",
-
+  "prettier.printWidth": 80,
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "markdown",
