@@ -14,6 +14,11 @@
 :set hlsearch
 :set cursorline
 :retab
+
+:set foldmethod=syntax
+:set foldnestmax=10
+:set nofoldenable
+:set foldlevel=2
 call plug#begin()
 
 Plug 'https://github.com/preservim/nerdtree'
@@ -29,7 +34,7 @@ Plug 'dart-lang/dart-vim-plugin'
 Plug 'thosakwe/vim-flutter'
 Plug 'natebosch/vim-lsc'
 Plug 'natebosch/vim-lsc-dart'
-Plug 'jiangmiao/auto-pairs'
+" Plug 'jiangmiao/auto-pairs'
 Plug 'kyazdani42/nvim-web-devicons'
 " Plug 'romgrk/barbar.nvim'
 Plug 'Mofiqul/dracula.nvim'
@@ -42,6 +47,7 @@ Plug 'akinsho/toggleterm.nvim'
 Plug 'https://github.com/ctrlpvim/ctrlp.vim' " Fuzzy Find 
 " Plug 'tpope/vim-unimpaired' " Moving Code Blocks 
 Plug 'http://github.com/jeetsukumaran/vim-buffergator' "Vim Buffers
+Plug 'https://github.com/nbouscal/vim-stylish-haskell'
 call plug#end()
 
 

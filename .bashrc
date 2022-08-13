@@ -2,25 +2,28 @@
 [[ $- != *i* ]] && return
 
 # Load starship prompt if starship is installed
-if  [ -x /usr/bin/starship ]; then
-    __main() {
-        local major="${BASH_VERSINFO[0]}"
-        local minor="${BASH_VERSINFO[1]}"
+# if  [ -x /usr/bin/starship ]; then
+#     __main() {
+#         local major="${BASH_VERSINFO[0]}"
+#         local minor="${BASH_VERSINFO[1]}"
 
-        if ((major > 4)) || { ((major == 4)) && ((minor >= 1)); }; then
-            source <("/usr/bin/starship" init bash --print-full-init)
-        else
-            source /dev/stdin <<<"$("/usr/bin/starship" init bash --print-full-init)"
-        fi
-    }
-    __main
-    unset -f __main
-fi
+#         if ((major > 4)) || { ((major == 4)) && ((minor >= 1)); }; then
+#             source <("/usr/bin/starship" init bash --print-full-init)
+#         else
+#             source /dev/stdin <<<"$("/usr/bin/starship" init bash --print-full-init)"
+#         fi
+#     }
+#     __main
+#     unset -f __main
+# fi
 
-source /usr/share/nvm/init-nvm.sh
+# source /usr/share/nvm/init-nvm.sh
 
 # Advanced command-not-found hook
 source /usr/share/doc/find-the-command/ftc.bash
+
+# Bash Prompt
+export PS1="\[\e[91m\][\[\e[m\]\[\e[32m\]\u\[\e[m\]\[\e[33m\]@\[\e[m\]\[\e[35m\]\h\[\e[m\]:\[\e[36m\]\w\[\e[m\]\[\e[91m\]]\$\[\e[0m\]"
 
 # Aliases
 alias dir='dir --color=auto'
