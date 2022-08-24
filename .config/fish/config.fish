@@ -196,3 +196,5 @@ function notify
 end
 
 set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin /home/rohits/.ghcup/bin $PATH # ghcup-env
+
+export PATH="$PATH:/home/rohits/.foundry/bin"

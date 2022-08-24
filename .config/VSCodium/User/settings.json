@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Sweet Dracula",
+    "workbench.colorTheme": "Gruvbox Dark Hard",
     "code-runner.runInTerminal": true,
     "code-runner.saveFileBeforeRun": true,
     "[dart]": {

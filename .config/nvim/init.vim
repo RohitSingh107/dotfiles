@@ -48,6 +48,7 @@ Plug 'https://github.com/ctrlpvim/ctrlp.vim' " Fuzzy Find
 " Plug 'tpope/vim-unimpaired' " Moving Code Blocks 
 Plug 'http://github.com/jeetsukumaran/vim-buffergator' "Vim Buffers
 Plug 'https://github.com/nbouscal/vim-stylish-haskell'
+Plug 'https://github.com/ap/vim-css-color'
 call plug#end()
 
 
