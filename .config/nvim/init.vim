@@ -49,6 +49,8 @@ Plug 'https://github.com/ctrlpvim/ctrlp.vim' " Fuzzy Find
 Plug 'http://github.com/jeetsukumaran/vim-buffergator' "Vim Buffers
 Plug 'https://github.com/nbouscal/vim-stylish-haskell'
 Plug 'https://github.com/ap/vim-css-color'
+Plug 'rust-lang/rust.vim'
+Plug 'https://github.com/mattn/webapi-vim'
 call plug#end()
 
 
@@ -69,6 +71,8 @@ let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowTo
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
+
+let g:rust_clip_command = 'xclip -selection clipboard'
 
 command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
 

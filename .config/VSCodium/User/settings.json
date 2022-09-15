@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "workbench.colorTheme": "Dracula",
     "code-runner.runInTerminal": true,
     "code-runner.saveFileBeforeRun": true,
     "[dart]": {
@@ -20,12 +20,14 @@
     "editor.formatOnSave": true,
     "editor.minimap.enabled": false,
     "cmake.configureOnOpen": true,
-
     "[solidity]": {
         "editor.defaultFormatter": "NomicFoundation.hardhat-solidity"
     },
-
     "window.zoomLevel": 1,
     "hardhat.telemetry": true,
-    "haskell.manageHLS": "GHCup"
+    "haskell.manageHLS": "GHCup",
+    "tabnine.experimentalAutoImports": true,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    }
 }
