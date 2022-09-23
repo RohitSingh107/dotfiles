@@ -1,5 +1,4 @@
 {
-    "workbench.colorTheme": "Dracula",
     "code-runner.runInTerminal": true,
     "code-runner.saveFileBeforeRun": true,
     "[dart]": {
@@ -23,7 +22,7 @@
     "[solidity]": {
         "editor.defaultFormatter": "NomicFoundation.hardhat-solidity"
     },
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 2,
     "hardhat.telemetry": true,
     "haskell.manageHLS": "GHCup",
     "tabnine.experimentalAutoImports": true,
