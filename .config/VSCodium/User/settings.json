@@ -22,11 +22,11 @@
     "[solidity]": {
         "editor.defaultFormatter": "NomicFoundation.hardhat-solidity"
     },
-    "window.zoomLevel": 2,
     "hardhat.telemetry": true,
     "haskell.manageHLS": "GHCup",
     "tabnine.experimentalAutoImports": true,
     "[typescriptreact]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
-    }
+    },
+    "window.zoomLevel": 1
 }
