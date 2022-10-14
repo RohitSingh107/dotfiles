@@ -199,3 +199,4 @@ set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; se
 
 export PATH="$PATH:/home/rohits/.foundry/bin"
 export PATH="$(yarn global bin):$PATH"
+export PATH="/home/rohits/.deta/bin:$PATH"
