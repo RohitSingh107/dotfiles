@@ -17,3 +17,5 @@ export VSCODE_GALLERY_CONTROL_URL=''
 export VSCODE_GALLERY_RECOMMENDATIONS_URL=''
 
 export CHROME_EXECUTABLE='/usr/bin/google-chrome-unstable'
+
+export PATH="/home/rohits/.local/share/solana/install/active_release/bin:$PATH"

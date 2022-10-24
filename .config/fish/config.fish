@@ -5,6 +5,7 @@ set VIRTUAL_ENV_DISABLE_PROMPT "1"
 set LANG en_US.utf8
 set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
 
+set -x SOLANA_METRICS_CONFIG "host=https://metrics.solana.com:8086,db=devnet,u=scratch_writer,p=topsecret"
 ## Export variable need for qt-theme
 if type "qtile" >> /dev/null 2>&1
    set -x QT_QPA_PLATFORMTHEME "qt5ct"
@@ -196,7 +197,9 @@ function notify
 end
 
 set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin /home/rohits/.ghcup/bin $PATH # ghcup-env
-
 export PATH="$PATH:/home/rohits/.foundry/bin"
 export PATH="$(yarn global bin):$PATH"
 export PATH="/home/rohits/.deta/bin:$PATH"
+export PATH="/home/rohits/.cargo/bin:$PATH"
+export PATH="/home/rohits/.avm/bin:$PATH"
+export PATH="/home/rohits/.local/share/solana/install/active_release/bin:$PATH"
