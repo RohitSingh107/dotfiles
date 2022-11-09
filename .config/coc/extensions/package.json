@@ -1,21 +1,25 @@
 {
   "dependencies": {
-    "coc-clangd": ">=0.23.0",
+    "coc-clangd": ">=0.26.2",
     "coc-emmet": ">=1.1.6",
     "coc-eslint": ">=1.5.8",
-    "coc-flutter": ">=1.9.8",
+    "coc-flutter": ">=1.9.9",
     "coc-highlight": ">=1.3.0",
-    "coc-html": ">=1.6.1",
-    "coc-json": ">=1.6.0",
-    "coc-pairs": ">=1.3.2",
+    "coc-html": ">=1.8.0",
+    "coc-json": ">=1.7.0",
+    "coc-pairs": ">=1.4.0",
     "coc-prettier": ">=9.3.1",
-    "coc-pyright": ">=1.1.272",
+    "coc-pyright": ">=1.1.275",
     "coc-python": ">=1.2.13",
-    "coc-rust-analyzer": ">=0.67.1",
-    "coc-snippets": ">=3.1.1",
-    "coc-solidity": ">=1.4.1",
+    "coc-rust-analyzer": ">=0.69.4",
+    "coc-snippets": ">=3.1.4",
+    "coc-solidity": ">=1.4.2",
     "coc-tabnine": ">=1.3.7",
     "coc-tsserver": ">=1.11.1",
-    "coc-vimlsp": ">=0.12.8"
-  }
+    "coc-vimlsp": ">=0.12.8",
+    "coc-sh": ">=0.7.0"
+  },
+  "disabled": [],
+  "locked": [],
+  "lastUpdate": 1667841671301
 }
