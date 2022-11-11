@@ -56,3 +56,4 @@ x-directory/normal=pcmanfm.desktop;filelight.desktop;
 inode/directory=org.gnome.meld.desktop;pcmanfm.desktop;filelight.desktop;
 x-scheme-handler/mailto=thunderbird-nightly.desktop;
 video/x-matroska=telegramdesktop.desktop;
+application/x-executable=micro.desktop;
