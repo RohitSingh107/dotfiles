@@ -1,9 +1,9 @@
 [Default Applications]
 x-scheme-handler/tg=userapp-Telegram Desktop-8HATP1.desktop
-x-scheme-handler/http=firefox.desktop
+x-scheme-handler/http=firefox-nightly.desktop
 text/html=balena-etcher-electron.desktop
-application/xhtml+xml=firefox.desktop
-x-scheme-handler/https=firefox.desktop
+application/xhtml+xml=firefox-nightly.desktop
+x-scheme-handler/https=firefox-nightly.desktop
 image/jpeg=feh.desktop
 image/bmp=feh.desktop
 image/gif=feh.desktop
