@@ -1,5 +1,5 @@
 [Default Applications]
-x-scheme-handler/tg=userapp-Telegram Desktop-8HATP1.desktop
+x-scheme-handler/tg=userapp-Telegram Desktop-JSL9V1.desktop
 x-scheme-handler/http=firefox-nightly.desktop
 text/html=balena-etcher-electron.desktop
 application/xhtml+xml=firefox-nightly.desktop
@@ -30,7 +30,7 @@ x-scheme-handler/eclipse+command=_usr_lib_dbeaver_.desktop
 x-scheme-handler/postman=Postman.desktop
 
 [Added Associations]
-x-scheme-handler/tg=userapp-Kotatogram Desktop-Q8IGL1.desktop;userapp-Telegram Desktop-8HATP1.desktop;
+x-scheme-handler/tg=userapp-Kotatogram Desktop-Q8IGL1.desktop;userapp-Telegram Desktop-8HATP1.desktop;userapp-Telegram Desktop-JSL9V1.desktop;
 x-scheme-handler/http=firefox.desktop;
 text/html=firefox.desktop;
 application/xhtml+xml=firefox.desktop;
