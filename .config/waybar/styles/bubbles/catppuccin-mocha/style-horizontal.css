@@ -298,7 +298,6 @@ window#waybar {
 
 /* -------------------------------------------------------------------------------- */
 
-/* #battery {} */
 #battery.full {
   background-color: @green;
   color: @crust;
@@ -336,7 +335,10 @@ window#waybar {
 #battery.plugged:hover {
   background-color: @sky;
 }
-
+#battery.discharging {
+  background-color: @rosewater;
+  color: @crust;
+}
 /* -------------------------------------------------------------------------------- */
 
 #clock {
