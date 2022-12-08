@@ -29,5 +29,7 @@
       "filetypes": ["haskell", "lhaskell"]
     }
   },
-  "snippets.ultisnips.pythonPrompt": false
+  "snippets.ultisnips.pythonPrompt": false,
+  "pyright.enable": true,
+  "python.linting.mypyEnabled": true
 }

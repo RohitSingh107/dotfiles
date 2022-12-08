@@ -25,9 +25,10 @@ inode/directory=pcmanfm.desktop;pcmanfm.desktop;filelight.desktop;
 x-directory/normal=pcmanfm.desktop;filelight.desktop;
 x-scheme-handler/mailto=thunderbird-nightly.desktop
 x-scheme-handler/etcher=balena-etcher-electron.desktop
-x-scheme-handler/gitkraken=GitKraken.desktop
+x-scheme-handler/micro.desktop
 x-scheme-handler/eclipse+command=_usr_lib_dbeaver_.desktop
 x-scheme-handler/postman=Postman.desktop
+x-scheme-handler/gitkraken=GitKraken.desktop
 
 [Added Associations]
 x-scheme-handler/tg=userapp-Kotatogram Desktop-Q8IGL1.desktop;userapp-Telegram Desktop-8HATP1.desktop;userapp-Telegram Desktop-JSL9V1.desktop;
