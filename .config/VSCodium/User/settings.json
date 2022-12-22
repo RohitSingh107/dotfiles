@@ -29,5 +29,11 @@
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "workbench.colorTheme": "Dracula",
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "html.format.contentUnformatted": "",
+    "emmet.triggerExpansionOnTab": true,
+    "files.associations": {
+        "*html": "html"
+    },
+    "emmet.useInlineCompletions": true
 }
