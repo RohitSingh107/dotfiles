@@ -52,8 +52,14 @@ Plug 'https://github.com/nbouscal/vim-stylish-haskell'
 Plug 'https://github.com/ap/vim-css-color'
 Plug 'rust-lang/rust.vim'
 Plug 'https://github.com/mattn/webapi-vim'
+Plug 'luukvbaal/nnn.nvim' " nnn File manager
 call plug#end()
 
+
+
+lua << EOF
+require("nnn").setup()
+EOF
 
 colorscheme dracula
 hi Normal guibg=NONE ctermbg=NONE
