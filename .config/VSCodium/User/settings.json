@@ -35,5 +35,6 @@
     "files.associations": {
         "*html": "html"
     },
-    "emmet.useInlineCompletions": true
+    "emmet.useInlineCompletions": true,
+    "typescript.updateImportsOnFileMove.enabled": "always"
 }
