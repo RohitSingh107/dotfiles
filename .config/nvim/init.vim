@@ -53,6 +53,8 @@ Plug 'https://github.com/ap/vim-css-color'
 Plug 'rust-lang/rust.vim'
 Plug 'https://github.com/mattn/webapi-vim'
 Plug 'luukvbaal/nnn.nvim' " nnn File manager
+" Plug 'nickeb96/fish.vim'
+Plug 'khaveesh/vim-fish-syntax'
 call plug#end()
 
 
@@ -83,6 +85,12 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:rust_clip_command = 'xclip -selection clipboard'
 
 command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
+
+syntax enable
+filetype plugin indent on
+if &shell =~# 'fish$'
+    set shell=sh
+endif
 
 source ~/.config/nvim/coc.vim
 

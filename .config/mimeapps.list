@@ -25,7 +25,7 @@ inode/directory=pcmanfm.desktop;pcmanfm.desktop;filelight.desktop;
 x-directory/normal=pcmanfm.desktop;filelight.desktop;
 x-scheme-handler/mailto=thunderbird-nightly.desktop
 x-scheme-handler/etcher=balena-etcher-electron.desktop
-x-scheme-handler/gitkraken=nvim.desktop
+x-scheme-handler/gitkraken=GitKraken.desktop
 x-scheme-handler/eclipse+command=_usr_lib_dbeaver_.desktop
 x-scheme-handler/postman=Postman.desktop
 
@@ -56,3 +56,4 @@ x-directory/normal=pcmanfm.desktop;filelight.desktop;
 inode/directory=org.gnome.meld.desktop;pcmanfm.desktop;filelight.desktop;
 x-scheme-handler/mailto=thunderbird-nightly.desktop;
 video/x-matroska=telegramdesktop.desktop;
+text/plain=staruml.desktop;

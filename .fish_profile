@@ -5,3 +5,8 @@ set -x VSCODE_GALLERY_CONTROL_URL ''
 set -x VSCODE_GALLERY_RECOMMENDATIONS_URL ''
 
 set -x CHROME_EXECUTABLE '/usr/bin/google-chrome-unstable'
+
+set -x EDITOR 'nvim'              # $EDITOR use Emacs in terminal
+set -x VISUAL 'nvim'           # $VISUAL use nvim in GUI mode
+
+
