@@ -165,7 +165,6 @@ alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 
 # Personal Alias
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-alias vim="nvim";
 alias nv="nvim";
 alias newcode='git status && git add . && git commit -m "new code" && git push origin'
 alias pushcfg='config status && config add -u && config commit -m "Updated fish history" && config push'
