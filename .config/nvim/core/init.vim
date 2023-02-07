@@ -22,7 +22,7 @@
 " :set foldlevel=2
 call plug#begin()
 
-Plug 'https://github.com/preservim/nerdtree'
+" Plug 'https://github.com/preservim/nerdtree'
 Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -31,32 +31,32 @@ Plug 'https://github.com/rafi/awesome-vim-colorschemes' " Retro Scheme
 Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
 Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
 " Plug 'https://github.com/neoclide/coc.nvim'  " Auto Completion
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'thosakwe/vim-flutter'
 Plug 'natebosch/vim-lsc'
 Plug 'natebosch/vim-lsc-dart'
 " Plug 'jiangmiao/auto-pairs'
-Plug 'kyazdani42/nvim-web-devicons'
+" Plug 'kyazdani42/nvim-web-devicons'
 " Plug 'romgrk/barbar.nvim'
-Plug 'Mofiqul/dracula.nvim'
+" Plug 'Mofiqul/dracula.nvim'
 Plug 'honza/vim-snippets' " Snippers
 Plug 'thinca/vim-quickrun'
 Plug 'luochen1990/rainbow' " For Colored parenthesis
 Plug 'TovarishFin/vim-solidity'
-Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
-Plug 'akinsho/toggleterm.nvim'
+" Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
+" Plug 'akinsho/toggleterm.nvim'
 Plug 'https://github.com/ctrlpvim/ctrlp.vim' " Fuzzy Find 
 " Plug 'tpope/vim-unimpaired' " Moving Code Blocks 
 Plug 'http://github.com/jeetsukumaran/vim-buffergator' "Vim Buffers
 Plug 'https://github.com/nbouscal/vim-stylish-haskell'
-Plug 'https://github.com/ap/vim-css-color'
+" Plug 'https://github.com/ap/vim-css-color'
 Plug 'rust-lang/rust.vim'
 Plug 'https://github.com/mattn/webapi-vim'
-Plug 'luukvbaal/nnn.nvim' " nnn File manager
+" Plug 'luukvbaal/nnn.nvim' " nnn File manager
 " Plug 'nickeb96/fish.vim'
-Plug 'khaveesh/vim-fish-syntax'
-Plug 'wbthomason/packer.nvim'
+" Plug 'khaveesh/vim-fish-syntax'
+" Plug 'wbthomason/packer.nvim'
 call plug#end()
 
 

@@ -19,13 +19,6 @@ packer.startup(function(use)
 	-- -- Dashboard is a nice start screen for nvim
 	-- use("glepnir/dashboard-nvim")
 
-	-- -- Telescope
-	-- use({
-	-- 	"nvim-telescope/telescope.nvim",
-	-- 	tag = "0.1.0",
-	-- 	requires = { { "nvim-lua/plenary.nvim" } },
-	-- })
-	-- use("nvim-telescope/telescope-file-browser.nvim")
 
 	-- use("nvim-treesitter/nvim-treesitter") -- Treesitter Syntax Highlighting
 
@@ -35,44 +28,34 @@ packer.startup(function(use)
 	-- use("nvim-orgmode/orgmode")
 
 	-- use("folke/which-key.nvim") -- Which Key
-	-- use("nvim-lualine/lualine.nvim") -- A better statusline
-
-	-- -- File management --
-	-- use("vifm/vifm.vim")
-	-- use("scrooloose/nerdtree")
-	-- use("tiagofumo/vim-nerdtree-syntax-highlight")
-	-- use("ryanoasis/vim-devicons")
 
 	-- -- Tim Pope Plugins --
 	-- use("tpope/vim-surround")
 
-	-- -- Syntax Highlighting and Colors --
-	-- use("PotatoesMaster/i3-vim-syntax")
-	-- use("kovetskiy/sxhkd-vim")
-	-- use("vim-python/python-syntax")
-	-- use("ap/vim-css-color")
-	-- use("nickeb96/fish.vim")
 
 	-- -- Junegunn Choi Plugins --
 	-- use("junegunn/goyo.vim")
 	-- use("junegunn/limelight.vim")
 	-- use("junegunn/vim-emoji")
 
-	-- -- Colorschemes --
-	-- use("RRethy/nvim-base16")
-	-- use("kyazdani42/nvim-palenight.lua")
 
-	-- -- Other stuff --
-	-- use("frazrepo/vim-rainbow")
-
-
-
-  use("morhetz/gruvbox") -- GruvBox theme
+  -- -- Coding Setup
   use {
-    'nvim-lualine/lualine.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-  } -- Lua Line Status bar
+    'neoclide/coc.nvim',
+    branch = 'release'
+
+  }
+	use("ap/vim-css-color")
+	use("nickeb96/fish.vim")
+  -- -- Themes
+  use("morhetz/gruvbox") -- GruvBox theme
   use("dracula/vim") -- Dracula Theme
+  -- use {
+  --   'nvim-lualine/lualine.nvim',
+  --   requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  -- } -- Lua Line Status bar
+  
+  -- -- File Management
   use {
     'nvim-tree/nvim-tree.lua',
     requires = {
