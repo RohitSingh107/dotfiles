@@ -61,6 +61,10 @@ call plug#end()
 
 
 hi Normal guibg=NONE ctermbg=NONE
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 " Ctrl-j/k deletes blank line below/above, and Alt-j/k inserts.
 
@@ -84,10 +88,6 @@ let g:dart_format_on_save = 1
 let g:lsc_auto_map = v:true " For Dart Server
 let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
 
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
-let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 let g:rust_clip_command = 'xclip -selection clipboard'
 
@@ -99,5 +99,6 @@ if &shell =~# 'fish$'
     set shell=sh
 endif
 
+" convert this vim script to nvim lua configuration
 " source ~/.config/nvim/coc.vim
 
