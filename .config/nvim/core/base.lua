@@ -77,11 +77,12 @@ o.splitbelow = true
 -- o.lazyredraw = true
 
 -- Better folds (don't fold by default)
-o.foldmethod = 'syntax'
+-- o.foldmethod = 'syntax'
+o.foldmethod = 'indent'
 -- o.foldlevelstart = 99
 o.foldnestmax = 10
 o.foldlevel = 2
--- o.foldminlines = 1
+o.foldminlines = 1
 --
 opt.mouse = "a"
 
