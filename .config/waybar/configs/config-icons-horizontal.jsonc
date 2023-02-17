@@ -123,6 +123,7 @@
     "tray",
     "cpu",
     "memory",
+    "disk",
     "backlight",
     // "pulseaudio",
     "pulseaudio#audio",
@@ -139,14 +140,21 @@
     // "icon-size": 21,
     "spacing": 10
   },
+
+  "disk": {
+  	"interval": 30,
+  	"format": "{path} {percentage_free}% free",
+    "on-click": "filelight"
+  },
+
   "cpu": {
     "format": "󰻠 {usage}%",
-    "on-click": "",
+    "on-click": "foot -e htop",
     "tooltip": false
   },
   "memory": {
     "format": "󰍛 {used:0.1f}GB ({percentage}%) / {total:0.1f}GB",
-    "on-click": "",
+    "on-click": "foot -e htop",
     "tooltip": false
   },
   "backlight": {

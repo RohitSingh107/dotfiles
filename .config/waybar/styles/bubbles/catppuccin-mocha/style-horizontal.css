@@ -59,6 +59,7 @@ window#waybar {
 #tray,
 #cpu,
 #memory,
+#disk,
 #backlight,
 #pulseaudio.audio,
 #pulseaudio.microphone,
@@ -118,6 +119,7 @@ window#waybar {
 .modules-left > widget:first-child > #tray,
 .modules-left > widget:first-child > #cpu,
 .modules-left > widget:first-child > #memory,
+.modules-left > widget:first-child > #disk,
 .modules-left > widget:first-child > #backlight,
 .modules-left > widget:first-child > #pulseaudio.audio,
 .modules-left > widget:first-child > #pulseaudio.microphone,
@@ -136,6 +138,7 @@ window#waybar {
 .modules-right > widget:last-child > #tray,
 .modules-right > widget:last-child > #cpu,
 .modules-right > widget:last-child > #memory,
+.modules-right > widget:last-child > #disk,
 .modules-right > widget:last-child > #backlight,
 .modules-right > widget:last-child > #pulseaudio.audio,
 .modules-right > widget:last-child > #pulseaudio.microphone,
@@ -162,6 +165,11 @@ window#waybar {
 
 /* -------------------------------------------------------------------------------- */
 
+#disk {
+  background-color: @teal;
+  /* background-color: @sapphire; */
+  color: @crust;
+}
 #cpu {
   background-color: @red;
   /* background-color: @sapphire; */
