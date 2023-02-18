@@ -64,9 +64,17 @@ packer.startup(function(use)
     tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
 
+  use("vim-airline/vim-airline")
+  use("vim-airline/vim-airline-themes")
+
 	if packer_bootstrap then
 		packer.sync()
 	end
 end)
 
+
+-- vim.g.airline#extensions#tabline_enabled = 1
+-- vim.g.airline#extensions#tabline_left_sep = ' '
+-- vim.g.airline#extensions#tabline_left_alt_sep = '|'
+-- vim.g.airline_extensions_tabline_formatter = 'unique_tail'
 
