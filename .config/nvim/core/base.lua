@@ -1,29 +1,19 @@
--------------------------------------------------
--- DT'S NEOVIM CONFIGURATION
--- Neovim website: https://neovim.io/
--- DT's dotfiles: https://gitlab.com/dwt1/dotfiles
--------------------------------------------------
 
 local g = vim.g
 local o = vim.o
 local opt = vim.opt
 
--- cmd('syntax on')
--- vim.api.nvim_command('filetype plugin indent on')
-
 o.expandtab = true
 o.termguicolors = true
--- o.background = 'dark'
 
--- Do not save when switching buffers
+-- -- Do not save when switching buffers
 -- o.hidden = true
 
--- Decrease update time
+-- -- Decrease update time
 o.timeoutlen = 500
 -- o.updatetime = 200
 
-
--- Number of screen lines to keep above and below the cursor
+-- -- Number of screen lines to keep above and below the cursor
 o.scrolloff = 8
 
 -- Better editor UI
@@ -71,54 +61,40 @@ o.history = 50
 o.splitright = true
 o.splitbelow = true
 
-
--- BUG: this won't update the search count after pressing `n` or `N`
--- When running macros and regexes on a large file, lazy redraw tells neovim/vim not to draw the screen
--- o.lazyredraw = true
-
--- Better folds (don't fold by default)
--- o.foldmethod = 'syntax'
-o.foldmethod = 'indent'
--- o.foldlevelstart = 99
-o.foldnestmax = 10
-o.foldlevel = 2
-o.foldminlines = 1
---
 opt.mouse = "a"
 
+vim.api.nvim_command("colorscheme dracula") -- colorscheme
+vim.api.nvim_command("syntax enable") -- for rust
+vim.api.nvim_command("filetype plugin indent on") -- for rust
+vim.api.nvim_command("hi Normal guibg=NONE ctermbg=NONE") -- transparent background
+-- vim.api.nvim_command('command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument') -- format on save
 
 
-vim.api.nvim_command("colorscheme dracula")
-vim.api.nvim_command("syntax enable")
+-- Map <leader> to space
+g.mapleader = " "
+g.maplocalleader = " "
 
-
--- require('lualine').setup {
---   theme = 'auto'
--- }
-
-
-
--- disable netrw at the very start of your init.lua (strongly advised)
+-- -- disable netrw at the very start of your init.lua (strongly advised)
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
--- OR setup with some options
-require("nvim-tree").setup({
-  sort_by = "case_sensitive",
-  view = {
-    width = 30,
-    mappings = {
-      list = {
-        { key = "u", action = "dir_up" },
-      },
-    },
-  },
-  renderer = {
-    group_empty = true,
-  },
-  filters = {
-    dotfiles = true,
-  },
-})
+vim.g["rainbow_active"] = 1 -- color parenthesis
+
+vim.g["rust_clip_command"] = 'xclip -selection clipboard' -- for rust
+
+-- -- For dart server
+vim.g["lsc_auto_map"] = true 
+vim.g["dart_html_in_string"] = true 
+vim.g["dart_style_guide"] = 2
+vim.g["dart_format_on_save"] = 1
+
+
+
+-- if vim.fn.shell() == 'fish' then
+--   vim.o.shell = 'sh'
+-- end
+
+
+
 
 

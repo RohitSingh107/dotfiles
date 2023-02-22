@@ -16,27 +16,46 @@ packer.startup(function(use)
 	-- Packer can manage itself
 	use("wbthomason/packer.nvim")
 
-	-- -- Dashboard is a nice start screen for nvim
-	-- use("glepnir/dashboard-nvim")
+	-- Dashboard is a nice start screen for nvim
+  use {
+    'glepnir/dashboard-nvim',
+    event = 'VimEnter',
+    config = function()
+      require('dashboard').setup {
+        -- config
+      }
+    end,
+    requires = {'nvim-tree/nvim-web-devicons'}
+  } -- nvim dashboard
 
+	use("nvim-treesitter/nvim-treesitter") -- Treesitter Syntax Highlighting
 
-	-- use("nvim-treesitter/nvim-treesitter") -- Treesitter Syntax Highlighting
+	-- Telescope
+	use({
+		"nvim-telescope/telescope.nvim",
+		tag = "0.1.0",
+		requires = { { "nvim-lua/plenary.nvim" } },
+	})
 
-	-- -- Productivity
-	-- use("vimwiki/vimwiki")
-	-- use("jreybert/vimagit")
-	-- use("nvim-orgmode/orgmode")
-
-	-- use("folke/which-key.nvim") -- Which Key
-
-	-- -- Tim Pope Plugins --
-	-- use("tpope/vim-surround")
-
-
-	-- -- Junegunn Choi Plugins --
-	-- use("junegunn/goyo.vim")
-	-- use("junegunn/limelight.vim")
-	-- use("junegunn/vim-emoji")
+	-- -- Orgmode
+  use {'nvim-orgmode/orgmode', config = function()
+    require('orgmode').setup{}
+  end
+  }
+  
+  -- Which key
+  use {
+    "folke/which-key.nvim",
+    config = function()
+      vim.o.timeout = true
+      vim.o.timeoutlen = 300
+      require("which-key").setup {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      }
+    end
+  }
 
 
   -- -- Coding Setup
@@ -45,16 +64,30 @@ packer.startup(function(use)
     branch = 'release'
 
   }
-	use("ap/vim-css-color")
 	use("nickeb96/fish.vim")
+  use("tpope/vim-commentary")
+  use("rust-lang/rust.vim")
+  use("dart-lang/dart-vim-plugin")
+  use("natebosch/vim-lsc")
+  use("natebosch/vim-lsc-dart")
+  use("thosakwe/vim-flutter")
+  use("ap/vim-css-color")
+  use("ryanoasis/vim-devicons")
+  use("mg979/vim-visual-multi")
+  use("honza/vim-snippets")
+  use("luochen1990/rainbow")
+  use("TovarishFin/vim-solidity")
+  -- use{ 'anuvyklack/pretty-fold.nvim',
+  --    config = function()
+  --       require('pretty-fold').setup()
+  --    end
+  -- }
+
+
   -- -- Themes
   use("morhetz/gruvbox") -- GruvBox theme
   use("dracula/vim") -- Dracula Theme
-  -- use {
-  --   'nvim-lualine/lualine.nvim',
-  --   requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-  -- } -- Lua Line Status bar
-  
+
   -- -- File Management
   use {
     'nvim-tree/nvim-tree.lua',
@@ -67,14 +100,18 @@ packer.startup(function(use)
   use("vim-airline/vim-airline")
   use("vim-airline/vim-airline-themes")
 
+
+
+
 	if packer_bootstrap then
 		packer.sync()
 	end
 end)
 
 
--- vim.g.airline#extensions#tabline_enabled = 1
--- vim.g.airline#extensions#tabline_left_sep = ' '
--- vim.g.airline#extensions#tabline_left_alt_sep = '|'
--- vim.g.airline_extensions_tabline_formatter = 'unique_tail'
-
+  -- use {
+  --   'nvim-lualine/lualine.nvim',
+  --   requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  -- } -- Lua Line Status bar
+  -- use("vimwiki/vimwiki")
+	-- use("jreybert/vimagit")
