@@ -13,7 +13,6 @@ local utils = require("utils")
 
 local core_conf_files = {
   "base.lua", -- base settings
-  "init.vim",
   "coc-conf.lua",
   "plugins.lua",
   "mappings.lua"
