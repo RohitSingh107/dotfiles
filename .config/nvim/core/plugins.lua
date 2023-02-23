@@ -52,11 +52,10 @@ packer.startup(function(use)
       require("which-key").setup {
         -- your configuration comes here
         -- or leave it empty to use the default settings
-        -- refer to the configuration section below
       }
     end
   }
-
+  
 
   -- -- Coding Setup
   use {
@@ -65,18 +64,29 @@ packer.startup(function(use)
 
   }
 	use("nickeb96/fish.vim")
-  use("tpope/vim-commentary")
   use("rust-lang/rust.vim")
   use("dart-lang/dart-vim-plugin")
   use("natebosch/vim-lsc")
   use("natebosch/vim-lsc-dart")
   use("thosakwe/vim-flutter")
-  use("ap/vim-css-color")
   use("ryanoasis/vim-devicons")
   use("mg979/vim-visual-multi")
   use("honza/vim-snippets")
   use("luochen1990/rainbow")
   use("TovarishFin/vim-solidity")
+  use("lukas-reineke/indent-blankline.nvim")
+  use {
+      'numToStr/Comment.nvim',
+      config = function()
+          require('Comment').setup()
+      end
+  } -- Comment with gcc
+  use {
+    'norcalli/nvim-colorizer.lua',
+    config = function()
+      require('colorizer').setup()
+    end
+  } -- colorcode Highlighting
   -- use{ 'anuvyklack/pretty-fold.nvim',
   --    config = function()
   --       require('pretty-fold').setup()
@@ -109,9 +119,3 @@ packer.startup(function(use)
 end)
 
 
-  -- use {
-  --   'nvim-lualine/lualine.nvim',
-  --   requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-  -- } -- Lua Line Status bar
-  -- use("vimwiki/vimwiki")
-	-- use("jreybert/vimagit")

@@ -15,7 +15,8 @@ local core_conf_files = {
   "base.lua", -- base settings
   "coc-conf.lua",
   "plugins.lua",
-  "mappings.lua"
+  "mappings.lua",
+  "autocmd.lua"
 }
 
 -- source all the core config files
