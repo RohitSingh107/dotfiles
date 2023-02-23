@@ -2,6 +2,7 @@
 -- KEYBINDINGS
 -------------------------------------------------
 
+
 local function map(m, k, v)
 	vim.keymap.set(m, k, v, { silent = true })
 end
@@ -34,9 +35,19 @@ map("n", "<leader>ht", "<CMD>Telescope colorscheme<CR>")
 
 -- Cancel search highlighting with ESC
 map("n", "<ESC>", ":nohlsearch<Bar>:echo<CR>")
+--
+-- -- Move selected line / block of text in visual mode
+-- map("x", "K", ":move '<-2<CR>gv-gv")
+-- map("x", "J", ":move '>+1<CR>gv-gv")
 
--- Move selected line / block of text in visual mode
-map("x", "K", ":move '<-2<CR>gv-gv")
-map("x", "J", ":move '>+1<CR>gv-gv")
+-- Copying the vscode behaviour of making tab splits
+map('n', '<C-\\>', '<CMD>vsplit<CR>')
+map('n', '<A-\\>', '<CMD>split<CR>')
+
+-- Move line up and down in NORMAL and VISUAL modes
+map('n', '<C-j>', '<CMD>move .+1<CR>')
+map('n', '<C-k>', '<CMD>move .-2<CR>')
+map('x', '<C-j>', ":move '>+1<CR>gv=gv")
+map('x', '<C-k>', ":move '<-2<CR>gv=gv")
 
 
