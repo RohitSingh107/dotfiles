@@ -110,6 +110,15 @@ packer.startup(function(use)
   use("vim-airline/vim-airline")
   use("vim-airline/vim-airline-themes")
 
+  --
+  -- -- to improve yank and put functionalities for Neovim.
+  -- use{
+  --   "gbprod/yanky.nvim",
+  --   config = function()
+  --     require('yanky').setup()
+  --   end
+  -- }
+
 
 
 
