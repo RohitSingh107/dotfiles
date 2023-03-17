@@ -204,3 +204,5 @@ export PATH="/home/rohits/.avm/bin:$PATH"
 export PATH="/home/rohits/.local/share/solana/install/active_release/bin:$PATH"
 
 # set -x XDG_CURRENT_DESKTOP sway
+
+export PATH="$PATH:/home/rohits/.protostar/dist/protostar"
