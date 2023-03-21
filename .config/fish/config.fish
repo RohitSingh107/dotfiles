@@ -24,13 +24,6 @@ if test -f ~/.fish_profile
 end
 
 
-# # Add yarn to PATH
-# if test -d ~/.yarn/bin
-#     if not contains -- ~/.local/bin $PATH
-#         set -p PATH ~/.yarn/bin
-#     end
-# end
-#
 # Add ~/.local/bin to PATH
 if test -d ~/.local/bin
     if not contains -- ~/.local/bin $PATH
