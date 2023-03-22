@@ -23,6 +23,12 @@ if test -f ~/.fish_profile
   source ~/.fish_profile
 end
 
+# Add Yarn bin to PATH
+if test -d ~/.yarn/bin
+    if not contains -- ~/.yarn/bin $PATH
+        set -p PATH ~/.yarn/bin
+    end
+end
 
 # Add ~/.local/bin to PATH
 if test -d ~/.local/bin
@@ -48,11 +54,12 @@ end
 
 ## Starship prompt
 if status --is-interactive
-   source ("/usr/bin/starship" init fish --print-full-init | psub)
+   # source ("/usr/bin/starship" init fish --print-full-init | psub)
+   source ("starship" init fish --print-full-init | psub)
 end
 
 ## Advanced command-not-found hook
-source /usr/share/doc/find-the-command/ftc.fish
+# source /usr/share/doc/find-the-command/ftc.fish
 
 ## Functions
 # Functions needed for !! and !$ https://github.com/oh-my-fish/plugin-bang-bang
@@ -197,7 +204,7 @@ end
 
 set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin /home/rohits/.ghcup/bin $PATH # ghcup-env
 export PATH="$PATH:/home/rohits/.foundry/bin"
-export PATH="$(yarn global bin):$PATH"
+# export PATH="$(yarn global bin):$PATH"
 export PATH="/home/rohits/.deta/bin:$PATH"
 export PATH="/home/rohits/.cargo/bin:$PATH"
 export PATH="/home/rohits/.avm/bin:$PATH"
