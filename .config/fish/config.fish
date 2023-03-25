@@ -4,7 +4,7 @@ set fish_greeting
 set VIRTUAL_ENV_DISABLE_PROMPT "1"
 set LANG en_US.utf8
 set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
-
+set -x LC_ALL "en_US.UTF-8"
 set -x SOLANA_METRICS_CONFIG "host=https://metrics.solana.com:8086,db=devnet,u=scratch_writer,p=topsecret"
 ## Export variable need for qt-theme
 if type "qtile" >> /dev/null 2>&1
