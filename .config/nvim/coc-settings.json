@@ -27,6 +27,10 @@
         "hie.yaml"
       ],
       "filetypes": ["haskell", "lhaskell"]
+    },
+    "nix": {
+      "command": "rnix-lsp",
+      "filetypes": ["nix"]
     }
   },
   "snippets.ultisnips.pythonPrompt": false,
