@@ -110,6 +110,9 @@ packer.startup(function(use)
   use("vim-airline/vim-airline")
   use("vim-airline/vim-airline-themes")
 
+  -- use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'}
+
+
   --
   -- -- to improve yank and put functionalities for Neovim.
   -- use{
