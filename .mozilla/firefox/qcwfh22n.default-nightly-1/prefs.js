@@ -85,6 +85,7 @@ user_pref("devtools.everOpened", true);
 user_pref("devtools.netmonitor.columnsData", "[{\"name\":\"status\",\"minWidth\":30,\"width\":6.67},{\"name\":\"method\",\"minWidth\":30,\"width\":6.67},{\"name\":\"domain\",\"minWidth\":30,\"width\":13.33},{\"name\":\"file\",\"minWidth\":30,\"width\":33.34},{\"name\":\"url\",\"minWidth\":30,\"width\":25},{\"name\":\"initiator\",\"minWidth\":30,\"width\":13.33},{\"name\":\"type\",\"minWidth\":30,\"width\":6.67},{\"name\":\"transferred\",\"minWidth\":30,\"width\":13.33},{\"name\":\"contentSize\",\"minWidth\":30,\"width\":6.67},{\"name\":\"waterfall\",\"minWidth\":150,\"width\":11.54}]");
 user_pref("devtools.netmonitor.msg.visibleColumns", "[\"data\",\"time\"]");
 user_pref("devtools.netmonitor.panes-network-details-height", 226);
+user_pref("devtools.performance.popup.intro-displayed", true);
 user_pref("devtools.performance.recording.entries", 134217728);
 user_pref("devtools.performance.recording.features", "[\"screenshots\",\"js\",\"stackwalk\",\"cpu\",\"processcpu\"]");
 user_pref("devtools.performance.recording.threads", "[\"GeckoMain\",\"Compositor\",\"Renderer\",\"SwComposite\",\"DOM Worker\"]");
