@@ -97,6 +97,12 @@ packer.startup(function(use)
   -- -- Themes
   use("morhetz/gruvbox") -- GruvBox theme
   use("dracula/vim") -- Dracula Theme
+  use { "catppuccin/nvim", as = "catppuccin" }
+  use 'folke/tokyonight.nvim'
+
+  use("vim-airline/vim-airline")
+  use("vim-airline/vim-airline-themes")
+
 
   -- -- File Management
   use {
@@ -106,10 +112,6 @@ packer.startup(function(use)
     },
     tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
-
-  use("vim-airline/vim-airline")
-  use("vim-airline/vim-airline-themes")
-
   -- use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'}
 
 

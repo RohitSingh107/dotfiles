@@ -2,6 +2,7 @@
 local g = vim.g
 local o = vim.o
 local opt = vim.opt
+local vim = vim
 
 o.expandtab = true
 o.termguicolors = true
@@ -63,6 +64,7 @@ o.splitbelow = true
 
 opt.mouse = "a"
 
+-- vim.cmd.colorscheme "tokyonight-night"
 vim.api.nvim_command("colorscheme dracula") -- colorscheme
 vim.api.nvim_command("syntax enable") -- for rust
 vim.api.nvim_command("filetype plugin indent on") -- for rust
