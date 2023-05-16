@@ -20,7 +20,6 @@ window:
   #dimensions:
   #  columns: 0
   #  lines: 0
-
   # Window position (changes require restart)
   #
   # Specified in number of pixels.
@@ -28,7 +27,6 @@ window:
   #position:
   #  x: 0
   #  y: 0
-
   # Window padding (changes require restart)
   #
   # Blank space added around the window in pixels. This padding is scaled
@@ -36,10 +34,9 @@ window:
   #padding:
   #  x: 0
   #  y: 0
-
   # Spread additional padding evenly around the terminal content.
   opacity: 0.6
-  
+
   dynamic_padding: true
 
   # Window decorations
@@ -63,7 +60,6 @@ window:
   # Values for `startup_mode` (macOS only):
   #   - SimpleFullscreen
   #startup_mode: Windowed
-
   # Window title
   title: Alacritty@Garuda
 
@@ -100,7 +96,6 @@ font:
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
     family: FantasqueSansMono
-
     # The `style` can be specified to pick a specific face.
     #style: Regular
 
@@ -111,7 +106,6 @@ font:
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
     family: FantasqueSansMono
-
     # The `style` can be specified to pick a specific face.
     #style: Bold
 
@@ -122,7 +116,6 @@ font:
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
     family: FantasqueSansMono
-
     # The `style` can be specified to pick a specific face.
     #style: Italic
 
@@ -136,29 +129,24 @@ font:
 
     # The `style` can be specified to pick a specific face.
     #style: Bold Italic
-
-  # Point size
+    # Point size
     size: 10.0
-
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   #offset:
   #  x: 0
   #  y: 0
-
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,
   # increasing `y` moves the glyph upwards.
   #glyph_offset:
   #  x: 0
   #  y: 0
-
   # Thin stroke font rendering (macOS only)
   #
   # Thin strokes are suitable for retina displays, but for non-retina screens
   # it is recommended to set `use_thin_strokes` to `false`.
   #use_thin_strokes: true
-
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
@@ -264,14 +252,12 @@ draw_bold_text_with_bright_colors: true
 #  animation: EaseOutExpo
 #  duration: 0
 #  color: '#ffffff'
-
 # Background opacity
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
 # background_opacity: 0.6
 # opacity: 0.6
-
 #selection:
 #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
 # When set to `true`, selected text will be copied to the primary clipboard.
@@ -288,7 +274,6 @@ cursor:
   #   - _ Underline
   #   - | Beam
   style: Underline
-
   # Vi mode cursor style
   #
   # If the vi mode cursor style is `None` or not specified, it will fall back to
@@ -296,11 +281,9 @@ cursor:
   #
   # See `cursor.style` for available options.
   #vi_mode_style: None
-
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
   #unfocused_hollow: true
-
   # Thickness of the cursor relative to the cell width as floating point number
   # from `0.0` to `1.0`.
   #thickness: 0.15
@@ -321,13 +304,11 @@ shell:
   program: /usr/bin/fish
 #  args:
 #    - --login
-
 # Startup directory
 #
 # Directory the shell is started in. If this is unset, or `None`, the working
 # directory of the parent process will be used.
 #working_directory: None
-
 # WinPTY backend (Windows only)
 #
 # Alacritty defaults to using the newer ConPTY backend if it is available,
@@ -337,10 +318,8 @@ shell:
 # Setting this option to `true` makes Alacritty use the legacy WinPTY backend,
 # even if the ConPTY backend is available.
 #winpty_backend: false
-
 # Send ESC (\x1b) before characters when alt is pressed.
 #alt_send_esc: true
-
 mouse:
   # Click settings
   #
@@ -349,10 +328,8 @@ mouse:
   # or triple click.
   #double_click: { threshold: 300 }
   #triple_click: { threshold: 300 }
-
   # If this is `true`, the cursor is temporarily hidden when typing.
   hide_when_typing: true
-
   #url:
   # URL launcher
   #
@@ -398,7 +375,6 @@ mouse:
 # - `mods` (see key bindings)
 #mouse_bindings:
 #  - { mouse: Middle, action: PasteSelection }
-
 # Key bindings
 #
 # Key bindings are specified as a list of objects. For example, this is the
@@ -586,7 +562,6 @@ key_bindings:
   #- { key: W,      mods: Shift,         mode: Vi, action: WordRight               }
   #- { key: E,      mods: Shift,         mode: Vi, action: WordRightEnd            }
   #- { key: Key5,   mods: Shift,         mode: Vi, action: Bracket                 }
-
   # (Windows, Linux, and BSD only)
   #- { key: V,        mods: Control|Shift,           action: Paste            }
   #- { key: C,        mods: Control|Shift,           action: Copy             }
@@ -597,10 +572,8 @@ key_bindings:
   #- { key: Add,      mods: Control,                 action: IncreaseFontSize }
   #- { key: Subtract, mods: Control,                 action: DecreaseFontSize }
   #- { key: Minus,    mods: Control,                 action: DecreaseFontSize }
-
   # (Windows only)
   #- { key: Return,   mods: Alt,           action: ToggleFullscreen }
-
   # (macOS only)
   #- { key: K,      mods: Command, mode: ~Vi, chars: "\x0c"            }
   #- { key: Key0,   mods: Command,            action: ResetFontSize    }
@@ -620,10 +593,8 @@ key_bindings:
   #debug:
   # Display the time it takes to redraw each frame.
   #render_timer: false
-
   # Keep the log file after quitting Alacritty.
   #persistent_logging: false
-
   # Log level
   #
   # Values for `log_level`:
@@ -634,36 +605,34 @@ key_bindings:
   #   - Debug
   #   - Trace
   #log_level: Warn
-
   # Print all received window events.
   #print_events: false
 
 colors:
-  # COLORSCHEME: dracula.yaml
-  # Default colors
+  name: Count Von Count
+  author: Baskerville
   primary:
-    background: '#282a36'
-    foreground: '#f8f8f2'
-
-  # Normal colors
+    background: "#000000"
+    foreground: "#919191"
+  cursor:
+    text: "#000000"
+    cursor: "#919191"
   normal:
-    black: '#000000'
-    red: '#ff5555'
-    green: '#50fa7b'
-    yellow: '#f1fa8c'
-    blue: '#caa9fa'
-    magenta: '#ff79c6'
-    cyan: '#8be9fd'
-    white: '#bfbfbf'
-
-  # Bright colors
+    black: "#303030"
+    red: "#c10023"
+    green: "#a83334"
+    yellow: "#b51d2c"
+    blue: "#8c4b46"
+    magenta: "#7d534f"
+    cyan: "#9a413d"
+    white: "#c6c6c6"
   bright:
-    black: '#575b70'
-    red: '#ff6e67'
-    green: '#5af78e'
-    yellow: '#f4f99d'
-    blue: '#caa9fa'
-    magenta: '#ff92d0'
-    cyan: '#9aedfe'
-    white: '#e6e6e6'
-theme: Dracula
+    black: "#5e5e5e"
+    red: "#ff8781"
+    green: "#ffa095"
+    yellow: "#ff948b"
+    blue: "#feb2aa"
+    magenta: "#ebbbb5"
+    cyan: "#ffaaa0"
+    white: "#ffffff"
+theme: Baskerville - Count Von Count
