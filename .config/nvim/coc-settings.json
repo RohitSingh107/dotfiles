@@ -12,7 +12,8 @@
     "html",
     "solidity",
     "cpp",
-    "c++"
+    "c++",
+    "Haskell"
   ],
 
   "languageserver": {
