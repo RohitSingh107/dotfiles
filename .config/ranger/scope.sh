@@ -94,6 +94,12 @@ handle_extension() {
             xlsx2csv -- "${FILE_PATH}" && exit 5
             exit 1;;
 
+        ## Markdown
+        md)
+            # try safepipe highlight --syntax=markdown --out-format=ansi "$path" && { dump | trim; exit 5; }
+            try safepipe glow -s dark "$path" && { dump | trim; exit 5; }
+            ;;
+
         ## HTML
         htm|html|xhtml)
             ## Preview as text conversion
