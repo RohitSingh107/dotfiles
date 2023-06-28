@@ -175,6 +175,7 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias vi="nvim";
 alias newcode='git status && git add . && git commit -m "new code" && git push origin'
 alias pushcfg='config status && config add -u && config commit -m "Updated fish history" && config push'
+alias icat='kitty +kitten icat'
 
 ## nvim inputf.in -c "vsplit tmp.cpp" -c "wincmd l" -c "split outputf.in"
 ## nvim "inputf.in" -c "split outputf.in" -c "topleft vs tmp.cpp"
