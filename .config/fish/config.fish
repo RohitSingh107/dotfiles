@@ -193,6 +193,14 @@ function gcr
     g++ -Wall -Wextra $argv -o tmp && ./tmp
 end
 
+function ranger
+    if test -z "$RANGER_LEVEL"
+        /usr/bin/ranger $argv
+    else
+        exit
+    end
+end
+
 function notify
     set -l job (jobs -l -g)
     or begin; echo "There are no jobs" >&2; return 1; end
