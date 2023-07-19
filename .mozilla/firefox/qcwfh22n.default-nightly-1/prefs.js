@@ -184,7 +184,7 @@ user_pref("print.printer_Mozilla_Save_to_PDF.print_orientation", 0);
 user_pref("print_printer", "Mozilla Save to PDF");
 user_pref("privacy.purge_trackers.date_in_cookie_database", "0");
 user_pref("privacy.purge_trackers.last_purge", "1689344954156");
-user_pref("privacy.sanitize.pending", "[{\"id\":\"newtab-container\",\"itemsToClear\":[],\"options\":{}}]");
+user_pref("privacy.sanitize.pending", "[]");
 user_pref("privacy.userContext.extension", "treestyletab@piro.sakura.ne.jp");
 user_pref("privacy.userContext.longPressBehavior", 2);
 user_pref("security.sandbox.content.tempDirSuffix", "d514c7ac-6386-4c40-93a2-c6781c013d30");
