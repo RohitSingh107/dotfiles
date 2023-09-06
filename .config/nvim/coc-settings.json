@@ -36,5 +36,6 @@
   },
   "snippets.ultisnips.pythonPrompt": false,
   "pyright.enable": true,
-  "python.linting.mypyEnabled": true
+  "python.linting.mypyEnabled": true,
+  "python.formatting.provider": "black"
 }
