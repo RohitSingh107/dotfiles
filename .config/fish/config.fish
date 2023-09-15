@@ -7,9 +7,9 @@ set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
 set -x LC_ALL "en_US.UTF-8"
 set -x SOLANA_METRICS_CONFIG "host=https://metrics.solana.com:8086,db=devnet,u=scratch_writer,p=topsecret"
 ## Export variable need for qt-theme
-if type "qtile" >> /dev/null 2>&1
-   set -x QT_QPA_PLATFORMTHEME "qt5ct"
-end
+# if type "qtile" >> /dev/null 2>&1
+#    set -x QT_QPA_PLATFORMTHEME "qt5ct"
+# end
 
 set -x MOZ_ENABLE_WAYLAND 1
 # Set settings for https://github.com/franciscolourenco/done

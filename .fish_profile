@@ -9,5 +9,6 @@ set -x CHROME_EXECUTABLE '/usr/bin/google-chrome-unstable'
 set -x EDITOR 'nvim'              # $EDITOR use Emacs in terminal
 set -x VISUAL 'nvim'           # $VISUAL use nvim in GUI mode
 
+set -x QT_QPA_PLATFORMTHEME "qt5ct"
 
 # set -x BROWSER (zenity --list --radiolist --text '' --column='check' --column=browser --title='select your browser' TRUE "brave-nightly" FALSE "firefox-nightly" FALSE "google-chrome-unstable")
