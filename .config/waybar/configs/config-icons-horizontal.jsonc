@@ -105,9 +105,7 @@
       "8": "θ",
       "9": "ι",
       "default": "α"
-      // "active": "●"    
-
-
+      // "active": "●"
     }
   },
 
@@ -142,8 +140,8 @@
   },
 
   "disk": {
-  	"interval": 30,
-  	"format": "{path} {percentage_free}% free",
+    "interval": 30,
+    "format": "{path} {percentage_free}% free",
     "on-click": "filelight"
   },
 
