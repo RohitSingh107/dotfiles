@@ -59,3 +59,4 @@ x-scheme-handler/mailto=thunderbird-nightly.desktop;
 video/x-matroska=telegramdesktop.desktop;
 text/plain=staruml.desktop;
 video/mp2t=firefox-nightly.desktop;
+application/pdf=libreoffice-startcenter.desktop;
