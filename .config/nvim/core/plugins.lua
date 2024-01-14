@@ -28,7 +28,7 @@ packer.startup(function(use)
     requires = {'nvim-tree/nvim-web-devicons'}
   } -- nvim dashboard
 
-	use("nvim-treesitter/nvim-treesitter") -- Treesitter Syntax Highlighting
+	-- use("nvim-treesitter/nvim-treesitter") -- Treesitter Syntax Highlighting
 
 	-- Telescope
 	use({
@@ -38,10 +38,10 @@ packer.startup(function(use)
 	})
 
 	-- -- Orgmode
-  use {'nvim-orgmode/orgmode', config = function()
-    require('orgmode').setup{}
-  end
-  }
+  -- use {'nvim-orgmode/orgmode', config = function()
+  --   require('orgmode').setup{}
+  -- end
+  -- }
   
   -- Which key
   use {
@@ -58,6 +58,7 @@ packer.startup(function(use)
   
 
   -- -- Coding Setup
+  use("sbdchd/neoformat")
   use {
     'neoclide/coc.nvim',
     branch = 'release'
@@ -123,6 +124,7 @@ packer.startup(function(use)
   --     require('yanky').setup()
   --   end
   -- }
+
 
 
 
