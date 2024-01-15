@@ -1,7 +1,7 @@
 local status, packer = pcall(require, "packer")
 if not status then
-	print("Packer is not installed")
-	return
+  print("Packer is not installed")
+  return
 end
 
 -- Reloads Neovim after whenever you save plugins.lua
@@ -13,10 +13,10 @@ vim.cmd([[
 ]])
 
 packer.startup(function(use)
-	-- Packer can manage itself
-	use("wbthomason/packer.nvim")
+  -- Packer can manage itself
+  use("wbthomason/packer.nvim")
 
-	-- Dashboard is a nice start screen for nvim
+  -- Dashboard is a nice start screen for nvim
   use {
     'glepnir/dashboard-nvim',
     event = 'VimEnter',
@@ -25,24 +25,28 @@ packer.startup(function(use)
         -- config
       }
     end,
-    requires = {'nvim-tree/nvim-web-devicons'}
+    requires = { 'nvim-tree/nvim-web-devicons' }
   } -- nvim dashboard
 
-	-- use("nvim-treesitter/nvim-treesitter") -- Treesitter Syntax Highlighting
+  -- Treesitter Syntax Highlighting
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
+  }
 
-	-- Telescope
-	use({
-		"nvim-telescope/telescope.nvim",
-		tag = "0.1.0",
-		requires = { { "nvim-lua/plenary.nvim" } },
-	})
+  -- Telescope
+  use({
+    "nvim-telescope/telescope.nvim",
+    tag = "0.1.0",
+    requires = { { "nvim-lua/plenary.nvim" } },
+  })
 
-	-- -- Orgmode
+  -- -- Orgmode
   -- use {'nvim-orgmode/orgmode', config = function()
   --   require('orgmode').setup{}
   -- end
   -- }
-  
+
   -- Which key
   use {
     "folke/which-key.nvim",
@@ -55,7 +59,7 @@ packer.startup(function(use)
       }
     end
   }
-  
+
 
   -- -- Coding Setup
   use("sbdchd/neoformat")
@@ -64,7 +68,7 @@ packer.startup(function(use)
     branch = 'release'
 
   }
-	use("nickeb96/fish.vim")
+  use("nickeb96/fish.vim")
   use("rust-lang/rust.vim")
   use("dart-lang/dart-vim-plugin")
   use("natebosch/vim-lsc")
@@ -77,10 +81,10 @@ packer.startup(function(use)
   use("TovarishFin/vim-solidity")
   use("lukas-reineke/indent-blankline.nvim")
   use {
-      'numToStr/Comment.nvim',
-      config = function()
-          require('Comment').setup()
-      end
+    'numToStr/Comment.nvim',
+    config = function()
+      require('Comment').setup()
+    end
   } -- Comment with gcc
   use {
     'norcalli/nvim-colorizer.lua',
@@ -129,9 +133,7 @@ packer.startup(function(use)
 
 
 
-	if packer_bootstrap then
-		packer.sync()
-	end
+  if packer_bootstrap then
+    packer.sync()
+  end
 end)
-
-
