@@ -36,5 +36,6 @@
         "*html": "html"
     },
     "emmet.useInlineCompletions": true,
-    "typescript.updateImportsOnFileMove.enabled": "always"
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "security.workspace.trust.untrustedFiles": "open"
 }
