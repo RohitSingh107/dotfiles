@@ -4,12 +4,12 @@ x-scheme-handler/http=select-browser.desktop
 text/html=balena-etcher-electron.desktop
 application/xhtml+xml=select-browser.desktop
 x-scheme-handler/https=select-browser.desktop
-image/jpeg=feh.desktop
+image/jpeg=sxiv.desktop
 image/bmp=feh.desktop
-image/gif=feh.desktop
-image/jpg=feh.desktop
+image/gif=sxiv.desktop
+image/jpg=sxiv.desktop
 image/pjpeg=feh.desktop
-image/png=feh.desktop
+image/png=sxiv.desktop
 image/tiff=feh.desktop
 image/webp=feh.desktop
 image/x-bmp=feh.desktop
@@ -29,6 +29,7 @@ x-scheme-handler/gitkraken=GitKraken.desktop
 x-scheme-handler/eclipse+command=_usr_lib_dbeaver_.desktop
 x-scheme-handler/postman=Postman.desktop
 x-scheme-handler/eclipse+mpc=_usr_lib_eclipse_.desktop
+application/pdf=select-browser.desktop
 
 [Added Associations]
 x-scheme-handler/tg=userapp-Kotatogram Desktop-Q8IGL1.desktop;userapp-Telegram Desktop-8HATP1.desktop;org.telegram.desktop.desktop;
