@@ -1,4 +1,3 @@
-image=/usr/share/wallpapers/garuda/Dracula Dragon Remix.png
 indicator-caps-lock
 font=FiraSans
 indicator-radius=125
@@ -19,6 +18,3 @@ screenshots
 time-effects
 fade-in 3
 grace 30
-
-
-
