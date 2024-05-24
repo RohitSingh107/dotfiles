@@ -69,6 +69,7 @@ packer.startup(function(use)
 
   }
   use("nickeb96/fish.vim")
+  use("purescript-contrib/purescript-vim")
   use("rust-lang/rust.vim")
   use("dart-lang/dart-vim-plugin")
   use("natebosch/vim-lsc")
@@ -107,6 +108,7 @@ packer.startup(function(use)
 
   use("vim-airline/vim-airline")
   use("vim-airline/vim-airline-themes")
+
 
 
   -- -- File Management

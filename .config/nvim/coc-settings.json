@@ -13,7 +13,8 @@
     "solidity",
     "cpp",
     "c++",
-    "Haskell"
+    "Haskell",
+    "purescript"
   ],
 
   "languageserver": {
@@ -32,6 +33,20 @@
     "nix": {
       "command": "rnix-lsp",
       "filetypes": ["nix"]
+    },
+    "purescript": {
+      "command": "purescript-language-server",
+      "args": ["--stdio"],
+      "filetypes": ["purescript"],
+      "trace.server": "off",
+      "rootPatterns": ["bower.json", "psc-package.json", "spago.dhall"],
+      "settings": {
+        "purescript": {
+          "addSpagoSources": true,
+          "addNpmPath": true,
+          "formatter": "purs-tidy"
+        }
+      }
     }
   },
   "snippets.ultisnips.pythonPrompt": false,
